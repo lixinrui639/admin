@@ -2072,6 +2072,7 @@ const CONFIG = {
                 // 恢复输入框的值
                 await refreshMpPackages();
                 return;
+                
             }
             const { error } = await supabaseClient.from('user_packages')
                 .update({ remaining_sessions: val })
